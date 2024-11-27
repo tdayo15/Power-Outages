@@ -1,4 +1,4 @@
-# Power Outages in USA's South
+# Analysis of Power Outages in the U.S.
 
 DSC 80 Final Project at UC San Diego by Therese Dao (*insert email*) and Isaiah Fang (*insert email*)
 
