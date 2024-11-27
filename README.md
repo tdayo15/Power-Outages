@@ -1,8 +1,10 @@
 # Power Outages in USA's South
 
-DSC 80 Final Project at UC San Diego by Therese Dao and Isaiah Fang
+DSC 80 Final Project at UC San Diego by Therese Dao (*insert email*) and Isaiah Fang (*insert email*)
 
-# Introduction
+---
+
+## Introduction
 
 In our project, we analyzed a dataset of major power outages in the U.S. from January 2000 to July 2016. The dataset comes from **Purdue University's Laboratory for Advancing Sustainable Critical Infrastructure** on 
 
@@ -14,26 +16,35 @@ In our project, we analyzed a dataset of major power outages in the U.S. from Ja
 
 *introduce raw data*
 
-# Data Cleaning and Exploratory Data Analysis
+---
 
-## Number of Power Outages per Year
+## Data Cleaning and Exploratory Data Analysis
 
-<iframe
-  src="assets/num_per_year.html"
-  width="800"
-  height="600"
-  frameborder="0"
-></iframe>
+### Number of Power Outages per Year
 
-# Assessment of Missingness
+<iframe src="assets/num_per_year.html" width="800" height="600" frameborder="0"></iframe>
 
+---
 
-
-# Hypothesis Testing
+## Assessment of Missingness
 
 
 
-# Framing a Prediction Problem
+---
+
+## Hypothesis Testing
+
+
+
+---
+
+
+
+## Framing a Prediction Problem
+
+
+
+---
 
 
 
@@ -41,9 +52,17 @@ In our project, we analyzed a dataset of major power outages in the U.S. from Ja
 
 
 
+---
+
+
+
 # Final Model
 
 
 
-# Fairness Analysis
+---
+
+
+
+## Fairness Analysis
 
