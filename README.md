@@ -48,7 +48,7 @@ In our project, we analyzed a dataset of major power outages in the U.S. from Ja
 
 
 
-# Baseline Model
+## Baseline Model
 
 
 
@@ -56,7 +56,7 @@ In our project, we analyzed a dataset of major power outages in the U.S. from Ja
 
 
 
-# Final Model
+## Final Model
 
 
 
