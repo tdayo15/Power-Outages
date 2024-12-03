@@ -1,6 +1,6 @@
 # Analysis of Power Outages in the U.S.
 
-DSC 80 Final Project at UC San Diego by Therese Dao (*insert email*) and Isaiah Fang (*insert email*)
+DSC 80 Final Project at UC San Diego by Therese Dao (t1dao@ucsd.edu) and Isaiah Fang (ifang@ucsd.edu)
 
 ---
 
