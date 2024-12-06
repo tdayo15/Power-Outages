@@ -10,13 +10,31 @@ In our project, we analyzed a dataset of major power outages in the U.S. from Ja
 
 > "geographical location of the outages, regional climatic information, land-use characteristics, electricity consumption patterns and economic characteristics of the states affected by the outages." [(link)](https://engineering.purdue.edu/LASCI/research-data/outages)
 
-*insert brief significance of the data*
+Before we begin the advanced analysis, we will first be cleaning the data, conducting exploratory data analysis, and analyze the missingness mechanisms and dependency of the data. Then, we will explore our research question: **When and where do power outages occur, and what is the cause of them?** We will formulate a model that predicts the causes of power outages, and both when and where. This is important because communities would be able to use this information to prevent potential power outages.
 
-### Question: When and where do power outages occur, and what is the cause of them?
+The raw data contains 1534 rows, aka 1534 unique outages. We will be focusing on the following columns:
 
-*insert step process of report*
-
-*introduce raw data*
+|           Column          |           Description         |
+|:--------------------------|------------------------------:|
+|`'YEAR'`                   |Year the outage occurred|
+|`'MONTH'`                  |Month the outage occurred|
+|`'U.S._STATE'`             |State where the outage occurred|
+|`'CLIMATE.REGION'`         |Region of the U.S. (North/South/East/West/Central)|
+|`'CLIMATE.CATEGORY'`       |Category of the Climate (cold, normal, warm)|
+|`'OUTAGE.START.DATE'`      |Start date of outage|
+|`'OUTAGE.START.TIME'`      |Start time of outage|
+|`'OUTAGE.RESTORATION.DATE'`|Date when power was restored|
+|`'OUTAGE.RESTORATION.TIME'`|Time when power was restored|
+|`'CAUSE.CATEGORY'`         |Category of event that caused outage|
+|`'CAUSE.CATEGORY.DETAIL'`  |Detailed Category of event that caused outage|
+|`'OUTAGE.DURATION'`        |Duration of outage (Minute)|
+|`'DEMAND.LOSS.MW'`         |Demand lost during the outage (Megawatt)|
+|`'CUSTOMERS.AFFECTED'`     |Number of customers affected by outage|
+|`'TOTAL.SALES'`            |Total power consumption (Megawatt per hour)|
+|`'TOTAL.CUSTOMERS'`        |Annual number of customers|
+|`'POPULATION'`             |Number of people|
+|`'PCT_LAND'`               |Percent of Land|
+|`'PCT_WATER_TOT'`          |Percent of Water|
 
 ---
 
