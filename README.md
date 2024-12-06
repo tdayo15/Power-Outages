@@ -60,37 +60,37 @@ The raw data contains 1534 rows, aka 1534 unique outages. We will be focusing on
 
 ### NMAR Analysis
 
-Among the columns from our dataset, we believe the column 'DEMAND.LOSS.MW' is most likely NMAR (Not Missing at Random). The missingness could be blammed on the data collecting process of the power measurement conditions and event type. During severe outages, the tools needed to measure power loss may have been non-functional, offline, or damaged. Based on our domain knowledge of catastrophic events, like extreme storms, we believe that missing values tend to occur more frequently.
+Among the columns from our dataset, we believe the column `'DEMAND.LOSS.MW'` is most likely NMAR (Not Missing at Random). The missingness could be blammed on the data collecting process of the power measurement conditions and event type. During severe outages, the tools needed to measure power loss may have been non-functional, offline, or damaged. Based on our domain knowledge of catastrophic events, like extreme storms, we believe that missing values tend to occur more frequently.
 
 The conditions that lead to high demand loss values are the same conditions that make it impossible to measure those values, making an NMAR pattern where the missingness is directly dependent on themself (the missing high demand loss would account for why the data is missing--as explained above).
 
-Additional data could be used to label the column 'DEMAND.LOSS.MW' as MAR (Missing at Random), such as individually recording the power grid monitoring system status during the outages. Then, I could analyze whether the missingness of the demand loss is dependent on the power measurement tool.
+Additional data could be used to label the column `'DEMAND.LOSS.MW'` as MAR (Missing at Random), such as individually recording the power grid monitoring system status during the outages. Then, I could analyze whether the missingness of the demand loss is dependent on the power measurement tool.
 
 ### Missingness Dependency
 
-We will focus on the column 'CAUSE.CATEGORY.DETAIL', as it has non-trivial missingness, to test missingness dependency against the columns 'MONTH' and 'CLIMATE.CATEGORY'.
+We will focus on the column `'CAUSE.CATEGORY.DETAIL'`, as it has non-trivial missingness, to test missingness dependency against the columns `'MONTH'` and `'CLIMATE.CATEGORY'`.
 
-First we will examine the distribution of 'MONTH' when 'CAUSE.CATEGORY.DETAIL' is missing vs not missing.
+First we will examine the distribution of `'MONTH'` when `'CAUSE.CATEGORY.DETAIL'` is missing vs not missing.
 
-**Null Hypothesis**: The distribution of 'MONTH' is the same when 'CAUSE.CATEGORY.DETAIL' is missing vs not missing.
+**Null Hypothesis**: The distribution of `'MONTH'` is the same when `'CAUSE.CATEGORY.DETAIL'` is missing vs not missing.
 
-**Alternate Hypothesis**: The distribution of 'MONTH' is different when 'CAUSE.CATEGORY.DETAIL' is missing vs not missing.
+**Alternate Hypothesis**: The distribution of `'MONTH'` is different when `'CAUSE.CATEGORY.DETAIL'` is missing vs not missing.
 
 <iframe src="assets/3_2_1.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/3_2_2.html" width="800" height="600" frameborder="0"></iframe>
 
-**Response**: We found an observed TVD of 0.152 and a p_value of 0.007. The empirical distribution of the TVDs is shown above. At p_value = 0.007, we reject the Null Hypothesis and favor the Alternate Hypothesis that the distribution of 'MONTH' is significantly different when 'CAUSE.CATEGORY.DETAIL' is missing vs not missing. This shows that the missingness of 'CAUSE.CATEGORY.DETAIL' is dependent on 'MONTH'.
+**Response**: We found an observed TVD of 0.152 and a p_value of 0.007. The empirical distribution of the TVDs is shown above. At p_value = 0.007, we reject the Null Hypothesis and favor the Alternate Hypothesis that the distribution of `'MONTH'` is significantly different when `'CAUSE.CATEGORY.DETAIL'` is missing vs not missing. This shows that the missingness of `'CAUSE.CATEGORY.DETAIL'` is dependent on `'MONTH'`.
 
-Second, we will focus on the dependency of 'CAUSE.CATEGORY.DETAIL' with 'CLIMATE.CATEGORY' when 'CAUSE.CATEGORY.DETAIL' is missing vs not missing.
+Second, we will focus on the dependency of `'CAUSE.CATEGORY.DETAIL'` with `'CLIMATE.CATEGORY'` when `'CAUSE.CATEGORY.DETAIL'` is missing vs not missing.
 
-**Null Hypothesis**: The distribution of 'CLIMATE.CATEGORY' is the same when 'CAUSE.CATEGORY.DETAIL' is missing vs not missing.
+**Null Hypothesis**: The distribution of `'CLIMATE.CATEGORY'` is the same when `'CAUSE.CATEGORY.DETAIL'` is missing vs not missing.
 
-**Alternate Hypothesis**:  The distribution of 'CLIMATE.CATEGORY' is different when 'CAUSE.CATEGORY.DETAIL' is missing vs not missing.
+**Alternate Hypothesis**:  The distribution of `'CLIMATE.CATEGORY'` is different when `'CAUSE.CATEGORY.DETAIL'` is missing vs not missing.
 
 <iframe src="assets/3_2_3.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/3_2_4.html" width="800" height="600" frameborder="0"></iframe>
 
-**Response**: We found an observed TVD of 0.096 and a p_value of 0.541. The empirical distribution of the TVDs is shown above. At p_value = 0.541, we fail to reject the Null Hypothesis that the distribution of 'CLIMATE.CATEGORY' is significantly similar when 'CAUSE.CATEGORY.DETAIL' is missing vs not missing. This shows that the missingness of 'CAUSE.CATEGORY.DETAIL' is not dependent on 'CLIMATE.CATEGORY'.
+**Response**: We found an observed TVD of 0.096 and a p_value of 0.541. The empirical distribution of the TVDs is shown above. At p_value = 0.541, we fail to reject the Null Hypothesis that the distribution of `'CLIMATE.CATEGORY'` is significantly similar when `'CAUSE.CATEGORY.DETAIL'` is missing vs not missing. This shows that the missingness of `'CAUSE.CATEGORY.DETAIL'` is not dependent on `'CLIMATE.CATEGORY'`.
 
 ---
 
