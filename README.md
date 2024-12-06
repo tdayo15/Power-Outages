@@ -40,18 +40,8 @@ The raw data contains 1534 rows, aka 1534 unique outages. We will be focusing on
 
 ## Data Cleaning and Exploratory Data Analysis
 
-<iframe 
-  src="assets/2_2_1.html" 
-  width="800" 
-  height="600" 
-  frameborder="0"
-></iframe>
-<iframe 
-  src="assets/2_2_2.html" 
-  width="800" 
-  height="600" 
-  frameborder="0"
-></iframe>
+<iframe src="assets/2_2_1.html" width="800" height="600" frameborder="0"></iframe>
+<iframe src="assets/2_2_2.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/2_2_3.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/2_2_4.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/2_2_5.html" width="800" height="600" frameborder="0"></iframe>
