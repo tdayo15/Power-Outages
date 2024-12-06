@@ -14,27 +14,27 @@ Before we begin the advanced analysis, we will first be cleaning the data, condu
 
 The raw data contains 1534 rows, aka 1534 unique outages. We will be focusing on the following columns:
 
-|           Column          |           Description         |
-|:--------------------------|------------------------------:|
-|`'YEAR'`                   |Year the outage occurred|
-|`'MONTH'`                  |Month the outage occurred|
+|Column             |Description|
+|---                |---        |
+|`'YEAR'`               |Year the outage occurred|
+|`'MONTH'`              |Month the outage occurred|
 |`'U.S._STATE'`             |State where the outage occurred|
-|`'CLIMATE.REGION'`         |Region of the U.S. (North/South/East/West/Central)|
-|`'CLIMATE.CATEGORY'`       |Category of the Climate (cold, normal, warm)|
-|`'OUTAGE.START.DATE'`      |Start date of outage|
-|`'OUTAGE.START.TIME'`      |Start time of outage|
-|`'OUTAGE.RESTORATION.DATE'`|Date when power was restored|
-|`'OUTAGE.RESTORATION.TIME'`|Time when power was restored|
-|`'CAUSE.CATEGORY'`         |Category of event that caused outage|
-|`'CAUSE.CATEGORY.DETAIL'`  |Detailed Category of event that caused outage|
-|`'OUTAGE.DURATION'`        |Duration of outage (Minute)|
-|`'DEMAND.LOSS.MW'`         |Demand lost during the outage (Megawatt)|
-|`'CUSTOMERS.AFFECTED'`     |Number of customers affected by outage|
-|`'TOTAL.SALES'`            |Total power consumption (Megawatt per hour)|
-|`'TOTAL.CUSTOMERS'`        |Annual number of customers|
+|`'CLIMATE.REGION'`             |Region of the U.S. (North/South/East/West/Central)|
+|`'CLIMATE.CATEGORY'`               |Category of the Climate (cold, normal, warm)|
+|`'OUTAGE.START.DATE'`              |Start date of outage|
+|`'OUTAGE.START.TIME'`              |Start time of outage|
+|`'OUTAGE.RESTORATION.DATE'`                |Date when power was restored|
+|`'OUTAGE.RESTORATION.TIME'`                |Time when power was restored|
+|`'CAUSE.CATEGORY'`             |Category of event that caused outage|
+|`'CAUSE.CATEGORY.DETAIL'`              |Detailed Category of event that caused outage|
+|`'OUTAGE.DURATION'`                |Duration of outage (Minute)|
+|`'DEMAND.LOSS.MW'`             |Demand lost during the outage (Megawatt)|
+|`'CUSTOMERS.AFFECTED'`             |Number of customers affected by outage|
+|`'TOTAL.SALES'`                |Total power consumption (Megawatt per hour)|
+|`'TOTAL.CUSTOMERS'`                |Annual number of customers|
 |`'POPULATION'`             |Number of people|
 |`'PCT_LAND'`               |Percent of Land|
-|`'PCT_WATER_TOT'`          |Percent of Water|
+|`'PCT_WATER_TOT'`              |Percent of Water|
 
 ---
 
