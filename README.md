@@ -128,3 +128,16 @@ Second, we will focus on the dependency of `'CAUSE.CATEGORY.DETAIL'` with `'CLIM
 
 ## Fairness Analysis
 
+We will preform a Fairness Analysis on our model to see its performance on bigger and smaller populations. The definition of these groups are populations greater than 15_000_000 vs populations less than 15_000_000.
+
+We decided on these groups because population is a heavy factor in determining the cause of major power outages (as predicted by our model). Performing a Fairness Analysis on our model would be beneficial for communities (across a range of population densities) on how to prevent different causes of power outages.
+
+Our evaluation metric will be the difference in accuracy because there is an inbalance of bigger and smaller populations.
+
+**Null Hypothesis**: The model is fair. The difference in accuracy for bigger and smaller populations are similar (any differences are due to random chance).
+
+**Alternate Hypothesis**: The model is unfair. The difference in accuracy for bigger and smaller populations are different.
+
+We preformed a permutation test with 1000 trials and got a p_value of 1. Because our p_value = 1, we fail to reject the null hypothesis that our model is fair. The model is significantly similar in terms of difference in accuracy for bigger and smaller populations. The figure below is a distribution of our test statistic:
+
+<iframe src="assets/8_1_1.html" width="800" height="600" frameborder="0"></iframe>
