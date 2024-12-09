@@ -149,7 +149,7 @@ The baseline model predicts the cause of major power outages ('cause.category') 
 
 <br> The pipeline integrates these preprocessing steps with a Random Forest Classifier to learn patterns in the data and make predictions.
 
-Classification Report:              
+**Classification Report:**
 
 | `'CAUSE.CATEGORY'`            | Precision     | Recall    | F1 score      | Support  |
 |:------------------------------|:--------------|:----------|--------------:|---------:|
@@ -200,7 +200,7 @@ To briefly summarize how it works,  Random Forest Classifier is an ensemble lear
 Cross-Validation Accuracy Scores: [0.79 0.77 0.79 0.79 0.79]
 Mean CV Accuracy: 0.785
 
-Classification Report:
+**Classification Report:**
 
 | `'CAUSE.CATEGORY'`            | Precision     | Recall    | F1 score      | Support   |
 |:------------------------------|:--------------|:----------|--------------:|----------:|
