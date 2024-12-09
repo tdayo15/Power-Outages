@@ -61,6 +61,8 @@ While the raw dataset is very comprehensive, it was necessary to perform data cl
 Additionally, we performed various aggregations on the dataset to get an idea of how the variables might relate to each other.
 **add 1-2 plots from aggregate section and write a brief description for each**
 
+
+
 ---
 
 ## Assessment of Missingness
@@ -180,7 +182,25 @@ A Random Forest classifier was trained on the features to predict the outage cau
 
 To briefly summarize how it works,  Random Forest Classifier is an ensemble learning method that combines multiple decision trees to make predictions by aggregating their outputs through majority voting. It builds each tree using a random subset of the data (bootstrapping) and selects a random subset of features for each split, which reduces overfitting and increases robustness. In this model, Random Forest effectively predicts the cause of power outages by capturing complex relationships between features like population and climate.region. Its ability to handle mixed data types, measure feature importance, and generalize well to unseen data makes it a strong choice for this classification task.
 
-**insert classification report here**
+Cross-Validation Accuracy Scores: [0.79 0.77 0.79 0.79 0.79]
+Mean CV Accuracy: 0.785
+
+Classification Report:
+
+
+|           asdf                |   Precision   |   Recall  |   F1 score    |   Support |
+|:------------------------------|:--------------|:----------|--------------:|----------:|
+| equipment failure             |     1.00      |    0.98   |     0.99      |     60    |
+| fuel supply emergency         |     1.00      |    1.00   |     1.00      |     51    |
+| intentional attack            |     0.99      |    1.00   |     1.00      |    418    |
+| islanding                     |     1.00      |    0.96   |     0.98      |     46    |
+| public appeal                 |     1.00      |    0.99   |     0.99      |     69    |
+| severe weather                |     1.00      |    1.00   |     1.00      |    763    |
+| system operability disruption |     0.99      |    0.99   |     0.99      |    127    |
+|                               |               |           |               |           |
+| accuracy                      |               |           |     1.00      |    1534   |
+| macro avg                     |     1.00      |    0.99   |     0.99      |    1534   |
+| weighted avg                  |     1.00      |    1.00   |     1.00      |    1534   |
 
 Looking at our chosen metrics for determining the performance of the model, the f-1 score here is a significant increase compared to the baseline model. The changes made to the model made it more consistent and provide more informative features, thus allowing for better prediction. The final model was better because it effectively leveraged meaningful features (population, climate.region) alongside robust preprocessing and evaluation methods. These changes ensured that the model not only performed well but also generalized effectively, making it a strong predictor of power outage causes across diverse conditions.
 
