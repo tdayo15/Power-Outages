@@ -116,7 +116,8 @@ Based on the observations above, it seems that states with smaller populations m
 
 **Alternative Hypothesis**: Power outages in states with smaller populations occur at a higher rate than all other regions of the US.
 
-**insert image of test-stat and p-value (output of the code for hypothesis test)**
+| T-statistic    |     1.467      |
+| P-value        |     0.074      |
 
 Due to the result of the hypothesis test not being significant enough, we cannot conclude that states with smaller populations have higher rates of power outage occurences compared to other regions in the United States. However, this does not absolutely conclude that regions with differing populations have the same rates of power outage occurences either; the findings of this hypothesis tests merely show that higher rates of power outages are not solely due to population.
 
