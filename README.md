@@ -148,7 +148,21 @@ The baseline model predicts the cause of major power outages ('cause.category') 
 
 <br> The pipeline integrates these preprocessing steps with a Random Forest Classifier to learn patterns in the data and make predictions.
 
-**insert image of classification report here**
+Classification Report
+
+                               precision    recall  f1-score   support
+
+            equipment failure       0.00      0.00      0.00        13
+        fuel supply emergency       0.20      0.06      0.09        17
+           intentional attack       0.72      0.72      0.72        85
+                    islanding       0.06      0.14      0.08         7
+                public appeal       0.50      0.11      0.18        18
+               severe weather       0.62      0.82      0.71       133
+system operability disruption       0.18      0.06      0.09        34
+
+                     accuracy                           0.57       307
+                    macro avg       0.33      0.27      0.27       307
+                 weighted avg       0.53      0.57      0.53       307
 
 As we can see from the classification report above, the baseline model is not good as it does not accurately identify the correct cause of the power outages most of the time. This could be due to several reasons, for example, the chosen features not being a good measure for prediction, the training set not being an ideal size, not enough data, etc.
 
@@ -187,8 +201,7 @@ Mean CV Accuracy: 0.785
 
 Classification Report:
 
-
-|           asdf                |   Precision   |   Recall  |   F1 score    |   Support |
+| `'CAUSE.CATEGORY'`            | Precision     | Recall    | F1 score      | Support   |
 |:------------------------------|:--------------|:----------|--------------:|----------:|
 | equipment failure             |     1.00      |    0.98   |     0.99      |     60    |
 | fuel supply emergency         |     1.00      |    1.00   |     1.00      |     51    |
