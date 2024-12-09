@@ -96,7 +96,20 @@ Second, we will focus on the dependency of `'CAUSE.CATEGORY.DETAIL'` with `'CLIM
 
 ## Hypothesis Testing
 
+To aid in identifying which regions are more prone to power outages, we want to study the relationship between state populations and power outage occurences.
+
 <iframe src="assets/4_1_1.html" width="800" height="600" frameborder="0"></iframe>
+Based on the observations above, it seems that states with smaller populations might experience a higher occurence rate of power outages. This could be due to a multitude of reasons such as sparse infrastructure investment, geographical/environmental factors, limited emergency response resources, etc.
+
+**Question**: Do states with smaller populations experience power outages at a higher rate compared to other regions of the United States?
+
+**Null Hypothesis**: Power outages in states with smaller populations occur at the same rate as all other regions of the US.
+
+**Alternative Hypothesis**: Power outages in states with smaller populations occur at a higher rate than all other regions of the US.
+
+**insert image of test-stat and p-value (output of the code for hypothesis test)**
+
+Due to the result of the hypothesis test not being significant enough, we cannot conclude that states with smaller populations have higher rates of power outage occurences compared to other regions in the United States. However, this does not absolutely conclude that regions with differing populations have the same rates of power outage occurences either; the findings of this hypothesis tests merely show that higher rates of power outages are not solely due to population.
 
 ---
 
