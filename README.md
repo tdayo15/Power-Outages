@@ -40,6 +40,10 @@ The raw data contains 1534 rows, aka 1534 unique outages. We will be focusing on
 
 ## Data Cleaning and Exploratory Data Analysis
 
+While the raw dataset is very comprehensive, it was necessary to perform data cleaning to increase efficiency in our analysis, handle missing data, and ensure conistency throughout the dataset. To fit the dataframe to our needs, it was reformatted so that the variables were properly displayed and all values were of the correct type. After this, the dataframe was reduced to only contain the variables needed for our analysis (listed above). These steps made the data more readable, concise, and easier to access.
+
+**just pick 1-2 plots from univariate and 1-2 plots from bivariate and write a quick description for each**
+
 <iframe src="assets/2_2_1.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/2_2_2.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/2_2_3.html" width="800" height="600" frameborder="0"></iframe>
@@ -53,6 +57,9 @@ The raw data contains 1534 rows, aka 1534 unique outages. We will be focusing on
 <iframe src="assets/2_3_1.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/2_3_2.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/2_3_3.html" width="800" height="600" frameborder="0"></iframe>
+
+Additionally, we performed various aggregations on the dataset to get an idea of how the variables might relate to each other.
+**add 1-2 plots from aggregate section and write a brief description for each**
 
 ---
 
