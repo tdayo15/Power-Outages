@@ -42,19 +42,26 @@ The raw data contains 1534 rows, aka 1534 unique outages. We will be focusing on
 
 While the raw dataset is very comprehensive, it was necessary to perform data cleaning to increase efficiency in our analysis, handle missing data, and ensure conistency throughout the dataset. To fit the dataframe to our needs, it was reformatted so that the variables were properly displayed and all values were of the correct type. After this, the dataframe was reduced to only contain the variables needed for our analysis (listed above). These steps made the data more readable, concise, and easier to access.
 
-**just pick 1-2 plots from univariate and 1-2 plots from bivariate and write a quick description for each**
 
 **Univariate**
+To gain some insight on the patterns occuring in the dataset, we will perform univariate analysis on some select columns. Our goal is to identify time periods and locations where power outages occur most frequently and additionally the most common causes.
 
 <iframe src="assets/2_2_5.html" width="800" height="600" frameborder="0"></iframe>
+This plot allows us to visualize the frequency of power outages in each state. In our analysis, we can use this to identify what factors lead to certain states having more or less instances of outages.
+
 <iframe src="assets/2_2_6.html" width="800" height="600" frameborder="0"></iframe>
+We also wanted to take a closer look at the climate regions to identify any possible correlations. We can see that areas such as the Northeast and the South experience higher frequencies of power outages, but with the plot alone it is unclear why.
 
 **Bivariate**
+Our next step is to use bivariate analysis to observe the relationships between variables and identify any possible correlations.
 
 <iframe src="assets/2_3_2.html" width="800" height="600" frameborder="0"></iframe>
-<iframe src="assets/2_3_3.html" width="800" height="600" frameborder="0"></iframe>
+Here we compared the 'cause.category' column with population to observe if any causes had dependencies on the size of the population the outage occured in. From this plot, we can see most causes are evenly distributed among various population sizes, but a few such as intentional attacks or severe weather occur more frequently in smaller populated areas.
 
-Additionally, we performed various aggregations on the dataset to get an idea of how the variables might relate to each other.
+<iframe src="assets/2_3_3.html" width="800" height="600" frameborder="0"></iframe>
+This plot compares the 'cause.category' and 'climate.category' columns. The purpose of this comparison was to see which causes were more prominent in each of the climate cateogries in the dataset. We observe that the data is pretty similar in all three climate categories, so there is not a significant relationship between these two variables.
+
+Lastly for our exploratory data analysis, we performed various aggregations on the dataset to get an idea of how some variables might relate to each other.
 
 **Aggregates**
 
@@ -64,7 +71,7 @@ Additionally, we performed various aggregations on the dataset to get an idea of
 | normal                    |           693         |      49.57    |
 | warm                      |           281         |      20.10    |
 
-Here we grouped the 'climate.category' and 'outage.duration' columns to see if there might be any correlations. Based on the pivot table, it doesn't seem that these variables hold much significance for each other.
+In one of our aggregates, we grouped the 'climate.category' and 'outage.duration' columns to see if there might be any correlations. Based on the pivot table, it doesn't seem that these variables hold much significance for each other.
 
 ---
 
