@@ -44,24 +44,27 @@ While the raw dataset is very comprehensive, it was necessary to perform data cl
 
 **just pick 1-2 plots from univariate and 1-2 plots from bivariate and write a quick description for each**
 
-<iframe src="assets/2_2_1.html" width="800" height="600" frameborder="0"></iframe>
-<iframe src="assets/2_2_2.html" width="800" height="600" frameborder="0"></iframe>
-<iframe src="assets/2_2_3.html" width="800" height="600" frameborder="0"></iframe>
-<iframe src="assets/2_2_4.html" width="800" height="600" frameborder="0"></iframe>
+**Univariate**
+
 <iframe src="assets/2_2_5.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/2_2_6.html" width="800" height="600" frameborder="0"></iframe>
-<iframe src="assets/2_2_7.html" width="800" height="600" frameborder="0"></iframe>
-<iframe src="assets/2_2_8.html" width="800" height="600" frameborder="0"></iframe>
-<iframe src="assets/2_2_9.html" width="800" height="600" frameborder="0"></iframe>
 
-<iframe src="assets/2_3_1.html" width="800" height="600" frameborder="0"></iframe>
+**Bivariate**
+
 <iframe src="assets/2_3_2.html" width="800" height="600" frameborder="0"></iframe>
 <iframe src="assets/2_3_3.html" width="800" height="600" frameborder="0"></iframe>
 
 Additionally, we performed various aggregations on the dataset to get an idea of how the variables might relate to each other.
+
 **add 1-2 plots from aggregate section and write a brief description for each**
 
+**Aggregates**
 
+|   `'CLIMATE.CATEGORY'`    |   `'OUTAGE.DURATION'` |   Percentage  |
+|:--------------------------|:----------------------|--------------:|
+| cold                      |           424         |      30.33    |
+| normal                    |           693         |      49.57    |
+| warm                      |           281         |      20.10    |
 
 ---
 
