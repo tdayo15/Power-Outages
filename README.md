@@ -56,8 +56,6 @@ While the raw dataset is very comprehensive, it was necessary to perform data cl
 
 Additionally, we performed various aggregations on the dataset to get an idea of how the variables might relate to each other.
 
-**add 1-2 plots from aggregate section and write a brief description for each**
-
 **Aggregates**
 
 |   `'CLIMATE.CATEGORY'`    |   `'OUTAGE.DURATION'` |   Percentage  |
@@ -65,6 +63,8 @@ Additionally, we performed various aggregations on the dataset to get an idea of
 | cold                      |           424         |      30.33    |
 | normal                    |           693         |      49.57    |
 | warm                      |           281         |      20.10    |
+
+Here we grouped the 'climate.category' and 'outage.duration' columns to see if there might be any correlations. Based on the pivot table, it doesn't seem that these variables hold much significance for each other.
 
 ---
 
